@@ -1,0 +1,16 @@
+def read(a,head):
+    tmp=head
+    while tmp!=-1:
+        print(a[tmp][0],end=" ")
+        tmp=a[tmp][1]
+    print()
+lisa=list(map(int,input().split()))
+a=[]
+for i in range(0,len(lisa)):
+    a.append([lisa[i],i+1])
+a[-1][1]=-1
+lisb=list(map(int,input().split()))
+b=[]
+for i in range(0,len(lisb)):
+    b.append([lisb[i],i+1])
+b[-1][1]=-1
